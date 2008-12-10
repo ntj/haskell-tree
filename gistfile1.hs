@@ -29,7 +29,7 @@ module Main where
       scale = r2 * 5 * ((1-(abs da / pi)) ** 2)
       points = map (rotateP (angle + r1 * da) . uscaleP scale) [(0,0), (0, -1)]
       thickness = n
-      [_,(x,y)] = points
+      (x,y) = last points
       subBranches = map (mapWidthLine (translateP x y)) (left ++ right)
       left = branch (takeOdd rs) (n-1) (angle-r1*pi/4)
       right = branch (takeEven rs) (n-1) (angle+r2*pi/4)
