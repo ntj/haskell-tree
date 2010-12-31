@@ -1,1 +1,12 @@
+This code was published on
 http://fhtr.blogspot.com/2008/12/drawing-tree-with-haskell-and-cairo.html
+
+You can compile it by doing
+ghc --make tree.hs canvas.hs -o tree
+
+make sure to have haskell-cairo package and haskel-gtk bindings installed on your system
+
+for ubuntu 10.4 those are libghc6-cairo-dev and libghc6-gtk-dev
+
+
+
